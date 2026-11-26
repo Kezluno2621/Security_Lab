@@ -2,3 +2,19 @@
 @media(min-width:1500px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:1000px){aside{width:195px;padding:25px 12px}main{margin-left:195px;width:calc(100% - 195px)}.content{padding:28px 24px}header{padding:0 24px}.filters{flex-wrap:wrap}.filters input{flex-basis:100%}.stats{grid-template-columns:1fr 1fr}.hero-progress{min-width:140px}.focus-list{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}@media(max-width:650px){aside{position:static;width:100%;padding:17px;border-right:0;border-bottom:1px solid var(--border)}.brand{font-size:14px}.brand .logo{height:34px;width:32px}.workspace,.aside-bottom{display:none}nav{display:flex;overflow:auto;margin-top:16px;gap:5px}nav button{white-space:nowrap;font-size:12px;padding:9px}nav button span{font-size:16px}.shell{display:block}main{margin:0;width:100%}header{height:50px;padding:0 18px}.save-state{font-size:10px;max-width:55%;text-align:right}.content{padding:25px 18px}h1{font-size:23px}.heading{align-items:flex-start;flex-direction:column}.hero{padding:23px;gap:15px}.hero h2{font-size:21px}.hero-progress{min-width:80px}.hero-progress strong{font-size:42px}.hero-progress em{font-size:21px}.hero-progress span{font-size:10px}.hero p{font-size:12px}.stat{padding:16px}.stat small{font-size:10px}.weekly{padding:17px}.section-title h2{font-size:17px}.filters select{flex:1;min-width:130px}.taskfoot{flex-direction:column}.taskfoot span:first-child{max-width:100%}.roadmap{grid-template-columns:1fr}.overlay{padding:10px}.modal{padding:20px}.formgrid{grid-template-columns:1fr}.wide{grid-column:auto}footer{gap:10px}.checklist{flex-direction:column}}
 
 .import-button{cursor:pointer;font-size:12px;border:1px solid #444;padding:8px;border-radius:6px;white-space:nowrap}.import-button input{display:none}footer{flex-wrap:wrap}
+
+/* Readability and editor controls */
+body{font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif}
+.task p,.taskfoot,.tiny,.badge,.muted,.filters input,.filters select,.focus-list label,.checklist label,.formgrid label,.save-state{font-size:14px}
+.formgrid input,.formgrid textarea,.formgrid select{font-size:16px;line-height:1.6}
+.formgrid textarea{min-height:88px}.formgrid textarea[rows="5"]{min-height:170px}
+.taskfoot{line-height:1.6}.taskfoot span{overflow-wrap:anywhere}
+.modal{padding:0;scroll-padding:100px 0 90px;overscroll-behavior:contain}
+.modal>.section-title{position:sticky;top:0;z-index:2;background:#191e26;margin:0;padding:20px 26px;border-bottom:1px solid var(--border)}
+.modal .formgrid,.modal form>.muted{margin:22px 26px}
+.modalfoot{position:sticky;bottom:0;z-index:2;background:#191e26;padding:16px 26px;box-shadow:0 -8px 20px #10131866}
+.modalfoot button:first-child{color:#ffb5ad}.modalfoot .primary{min-width:116px}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--accent)}
+.import-button:focus-within{outline:2px solid var(--accent)}
+.import-button input{display:block;position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);padding:0;border:0}
+@media(max-width:650px){.modal{padding:0;max-height:95dvh}.modal>.section-title{padding:16px}.modal .formgrid,.modal form>.muted{margin:18px 16px}.modalfoot{padding:14px 16px}.modalfoot span{max-width:35%}.save-state{font-size:12px}.hero{flex-wrap:wrap}.hero-progress{min-width:140px}}

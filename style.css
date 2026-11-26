@@ -92,3 +92,11 @@ header .save-state{max-width:100%;text-align:left;font-size:12px}
 .weekly{padding:16px}.section-title{flex-wrap:wrap}.section-title input{max-width:100%}
 .roadmap{grid-template-columns:1fr}.checklist{flex-direction:column}
 }
+
+/* Collapse unused card tracks so short topic groups fill their row. */
+.cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+@media(max-width:900px){.cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+
+/* Remove the unused sidebar profile block. */
+.aside-bottom{display:none}
